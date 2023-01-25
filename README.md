@@ -138,9 +138,9 @@ ADD DESCRIPTION (Usage example of the wifi button being used as an Infant Tracke
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Breadboard Prototype to test functionality
+- [x] Breadboard Prototype to test functionality<br>
   <img src="images/bench-pic.png" width="300"/>
-- [x] Document Prototype in hobby CAD software (Tinkercad / Fritzing)
+- [x] Document Prototype in hobby CAD software (Tinkercad / Fritzing)<br>
   <img src="images/hobby-cad.png" width="300"/>
 - [x] Electronic Design Automation (EDA), and 
     - [x] Schematic Capture<br>
