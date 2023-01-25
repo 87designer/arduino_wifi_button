@@ -50,16 +50,20 @@ Categorical Data Logging Wifi Button (Arduino Uno Shield Design)
 
 <div style="display:flex">
      <div style="flex:1;padding-right:10px;">
-          <img src="images/KiCad_Model(top).png"/>
+          <img src="images/KiCad_Model(top).png" width=400px/>
      </div>
      <div style="flex:1;padding-left:10px;">
-          <img src="images/KiCad_Model(bot).png"/>
+          <img src="images/KiCad_Model(bot).png" width=400px/>
      </div>
 </div>
 
 ADD DESCRIPTION (Talk about inspriation, and Inventr class providing skills to bring this project to life.)
 
-![AWB0412 Screen Shot](images/Final_PCB_Design(artwork).png)
+<div style="display:flex">
+     <div style="flex:1;padding-right:10px;">
+          <img src="images/Final_PCB_Design(artwork).png" width=600px/>
+     </div>
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
