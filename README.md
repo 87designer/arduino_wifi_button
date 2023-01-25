@@ -139,14 +139,21 @@ ADD DESCRIPTION (Usage example of the wifi button being used as an Infant Tracke
 ## Roadmap
 
 - [x] Breadboard Prototype to test functionality
-  - ![Bench Picture](images/)
+  <img src="images/bench-pic.png" width="300"/>
 - [x] Document Prototype in hobby CAD software (Tinkercad / Fritzing)
-  - ![Prototype Screenshot](images/)
+  <img src="images/hobby-cad.png" width="300"/>
 - [x] Electronic Design Automation (EDA), and 
-    - [x] Schematic Capture
-      - ![Schematics Screenshot](images/)
-    - [x] PCB Layout with Gerber output
-      - ![PCB layout Screenshot](images/)
+    - [x] Schematic Capture<br>
+      <img src="images/elec-schematic.png" width="300"/>
+    - [x] PCB Layout with Gerber output<br>
+      <div style="display:flex">
+        <div style="flex:1;padding-right:10px;">
+          <img src="images/pcb-layout-f.png" width=300px/>
+        </div>
+        <div style="flex:1;padding-right:10px;">
+          <img src="images/pcb-layout-b.png" width=300px/>
+        </div>
+      </div>
 - [ ] Develop Final button commands
 - [ ] Draft Documentation
 - [ ] Assemble Shield & Test Hardware
