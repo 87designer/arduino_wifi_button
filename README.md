@@ -193,9 +193,10 @@ One usage example of the AWB0412 wifi button shield would be as an Infant Tracke
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* Special shoutout to the [Inventr]() Adventure Kit for laying the foundation for electronics that helped bring this project to life.
+* Special shoutout to the [Inventr](https://inventr.io/) Adventure Kit for laying the foundation for electronics that helped bring this project to life.
 * [LogMaker360](https://www.youtube.com/watch?v=fS0GeaOkNRw) Youtube video walkthrough on how to get arduino to write to google sheets.
 * [Electronics Hub](https://www.electronicshub.org/esp8266-arduino-interface/) Great article with detailed information regarding the ESP8266 ESP-01
+* [Gerber/Drill File Generation Guide](https://support.jlcpcb.com/article/194-how-to-generate-gerber-and-drill-files-in-kicad-6) for PCB production at JLCPCB when using KiCad 6
 * [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
