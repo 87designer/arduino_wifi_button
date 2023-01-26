@@ -46,7 +46,22 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Categorical Data Logging Wifi Button (Arduino Uno Shield Design)
+After being introduced to Arduino and electronics through the "30 Days Lost in Space" Adventure Kit from Inventr, I was served a social media ad for a small consumer button device that logged events to a dashboard, via wifi. Seeing how I could potentially leverage a device like this in my day to day, my gears got to turning.
+
+```
+Arduino + New Electronic Skills = I can make that
+```
+
+And with that, the AWB0412 categorical data logging wifi button was born. *(as an Arduino Uno Shield)*
+
+When the device is powered on the LED in the top left will be red. After successful network connectino has been made, the LED will turn Green. When a Button is pressed the LED will blink blue.
+
+There are 4 buttons on the shield giving the ability to log up to 12 different types of events using the methods of single click, double click, & hold +1 second for each button.
+
+<br>
+<hr>
+
+#### 3D Model with Components *(Designed using KiCad)*
 
 <div style="display:flex">
      <div style="flex:1;padding-right:10px;">
@@ -57,7 +72,10 @@ Categorical Data Logging Wifi Button (Arduino Uno Shield Design)
      </div>
 </div>
 
-ADD DESCRIPTION (Talk about inspriation, and Inventr class providing skills to bring this project to life.)
+<br>
+<hr>
+
+#### PCB *(Vendor Mockup from Gerber files)*
 
 <div style="display:flex">
      <div style="flex:1;padding-right:10px;">
@@ -84,16 +102,14 @@ ADD DESCRIPTION (Talk about inspriation, and Inventr class providing skills to b
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Explain the overall functionality
-Explain switch configurations
-
 ### Prerequisites
 
-* Arudino IDE Installed
-* Appropriate Drivers Installed
-* ESP Libraries installed
-* Google Sheet Setup
-* Javascript Web App Deployed
+1) Install the [Arudino IDE](https://www.arduino.cc/en/software) on your computer
+2) Install appropriate [Drivers](https://inventr.io/drivers/) for the Hero board
+3) Install [ESP Libraries](https://github.com/esp8266/Arduino)
+4) [Configure Cloud](https://www.youtube.com/watch?v=fS0GeaOkNRw) storage and app
+    - Setup a Google Sheet to accept the timestamps and categories.
+    - Deploy Google Apps Script code to listen for category request and write it to the google sheet.
 
 ### Materials:
   * 1 x [Arduino Hero](https://github.com/inventrkits/HERO)
@@ -115,12 +131,18 @@ Explain switch configurations
 
 <!-- Write about install/uploading the code for hero & wifi module-->
 
-ADD DESCRIPTION (installation commands around uploading code to the Hero & Wifi Module)
-1. Step one description to go here
-2. Example Installation Commands
-   ```
-   Commands
-   ```
+After construction of the Shield is complete, mount the shield to the Arduino and connect to your computer using the compatible USB cable to power on.
+
+1. Open up the Arduino IDE and ensure the correct Board and Port are selected.
+2. With all switches on the shield in the operating position, upload a [blank sketch]() to the Arduino.
+3. Power down / disconnect the USB cable and slide DPDT switch and top DIP switch *(this will enable programming mode for the wifi module when powered is restored)*.
+5. Reconnect the USB and change the board assignment in the IDE to the ESP8266 wifi module *(the port should be the same so ensure it is still assigned)*
+6. Upload the [wifi sketch]() to the ESP8266.
+7. Once the sketch is finished uploading, slide the top DIP switch on and off to reset the wifi module.
+8. Power down / disconnect the USB cable and return all switches to operating position.
+9. Reconnect the USB and change the board assignment in the IDE back to the Arduino.
+10. Upload the [button sketch]() to the Arduino.
+11. Once the sketch is finished uploading, power down / disconnect the USB cable from the computer and the device is ready to operate from an appropriate power source (battery, wall plug, usb cable.)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -129,7 +151,9 @@ ADD DESCRIPTION (installation commands around uploading code to the Hero & Wifi 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-ADD DESCRIPTION (Usage example of the wifi button being used as an Infant Tracker... diapers, feedings, sleep schedule etc.)
+#### Infant Tracker
+
+One usage example of the AWB0412 wifi button shield would be as an Infant Tracker to help sleep deprived parents keep track of diapers, feedings, sleep schedule etc.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -155,6 +179,7 @@ ADD DESCRIPTION (Usage example of the wifi button being used as an Infant Tracke
         </div>
       </div>
 - [ ] Develop Final button commands
+- [ ] Develop Method of Powering Device
 - [ ] Draft Documentation
 - [ ] Assemble Shield & Test Hardware
 - [ ] Finalize Documentation
@@ -168,10 +193,10 @@ ADD DESCRIPTION (Usage example of the wifi button being used as an Infant Tracke
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []() Add Inventr acknowledgement for 
-* []() Add google sheet code acknowledgement
-* []() Add ESP8266 Tutorial acknowledgement
-* []() Add README file acknowledgement here
+* Special shoutout to the [Inventr]() Adventure Kit for laying the foundation for electronics that helped bring this project to life.
+* [LogMaker360](https://www.youtube.com/watch?v=fS0GeaOkNRw) Youtube video walkthrough on how to get arduino to write to google sheets.
+* [Electronics Hub](https://www.electronicshub.org/esp8266-arduino-interface/) Great article with detailed information regarding the ESP8266 ESP-01
+* [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
