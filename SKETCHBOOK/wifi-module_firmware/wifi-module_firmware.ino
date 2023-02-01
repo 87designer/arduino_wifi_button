@@ -10,7 +10,7 @@ const int httpsPort = 443;
 WiFiClientSecure client;
 // SHA1 fingerprint of the certificate
 const char* fingerprint = "67 12 5D A1 8A F5 FD EC 11 FD 73 61 69 A8 4C 3F 3A B9 C2 18";
-String GAS_ID = "AKfycbzXYy9kzM3VsaqaCOcIteYKYn6igCxIuQ_9j18ZkLoFyo6GASiQGOhGJt3Ew__m4HqS";
+String GAS_ID = "<Place Google App Script ID here>";
 String wifiStatus;
 
 void setup() {
@@ -37,8 +37,8 @@ void setup() {
 
   bool res;
   // res = wm.autoConnect(); // auto generated AP name from chipid
-  res = wm.autoConnect("CountingKira"); // anonymous ap
-  // res = wm.autoConnect("CountingKira","password"); // password protected ap
+  res = wm.autoConnect("<Place Name of IOT device here>"); // anonymous ap
+  // res = wm.autoConnect("<Place Name of IOT device here>","password"); // password protected ap
 
   if(!res) {
     Serial.println("Failed to connect");
@@ -98,25 +98,4 @@ void sendData(String btn){
          "User-Agent: BuildFailureDetectorESP8266\r\n" +
          "Connection: close\r\n\r\n");
   Serial.println("request sent");
-
-  // while (client.connected()) {
-  //   String line = client.readStringUntil('\n');
-  //   if (line == "\r") {
-  //     Serial.println("headers received");
-  //     break;
-  //   }
-  // }
-
-  // String line = client.readStringUntil('\n');
-
-  // if (line.startsWith("{\"state\":\"success\"")) {
-  //   Serial.println("esp8266/Arduino CI successfull!");
-  // } else {
-  //   Serial.println("esp8266/Arduino CI has failed");
-  // }
-  // Serial.println("reply was:");
-  // Serial.println("==========");
-  // Serial.println(line);
-  // Serial.println("==========");
-  // Serial.println("closing connection");
 }
